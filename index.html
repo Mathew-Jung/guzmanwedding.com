@@ -1,83 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandra & Chad - Wedding Info</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0d3b3b;
-            font-family: 'Georgia', serif;
-            color: #fff;
-        }
-        .container {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-style: italic;
-            color: #d9a87c;
-        }
-        h2 {
-            font-size: 2rem;
-            color: #b46727;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin: 5px 0;
-        }
-        .travel-section {
-            background-color: #2b4d4d;
-            padding: 30px 20px;
-            margin-top: 30px;
-            border-radius: 10px;
-        }
-        .links a {
-            color: #d9a87c;
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin: 0 10px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .hotel {
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Alexandra Najera & Chad Guzman's Wedding</title>
+  <!-- Google Fonts for an elegant, wedding-themed look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body & Overall Page Setup */
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #0c4340; /* Teal background referencing the invitation */
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      position: relative; /* Needed for absolute-positioned swirls */
+    }
+
+    /* Container */
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Subtle overlay effect */
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 1; /* So it's above the swirl backgrounds */
+    }
+
+    /* Title & Subtitles */
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ffffff; /* White text for "Save the Date" */
+      margin-bottom: 0.25em;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 1.5em;
+      color: #d3c0ad; /* A softer tan color */
+    }
+
+    /* Names, Date, Location */
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #c59a70; /* Warm gold for the couple's names */
+      margin: 0.5em 0;
+    }
+
+    .date {
+      font-size: 1.5rem;
+      color: #e27a53; /* Subtle orange for the date */
+      margin: 1em 0 0.5em;
+    }
+
+    .location {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 1.5em;
+    }
+
+    /* Travel & Accommodations Section */
+    .travel {
+      text-align: center;
+      margin: 2rem 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .travel h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d3c0ad;
+    }
+
+    .travel p,
+    .travel li {
+      margin-bottom: 0.5em;
+      line-height: 1.6;
+    }
+
+    .travel a {
+      color: #fefefe;
+      text-decoration: underline;
+    }
+    .travel a:hover {
+      color: #ffd700; /* Gold-ish hover color */
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* Decorative Swirls (approximation using radial gradients) */
+    .swirl {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      /* Multi-ring radial gradient to mimic the circular patterns */
+      background: radial-gradient(
+        circle at center,
+        #f3dbc2 15%,
+        #d3a57a 35%,
+        #b67b4d 55%,
+        #7a3f2b 75%
+      );
+      z-index: 0;
+    }
+    .swirl1 {
+      top: 20px;
+      left: 20px;
+    }
+    .swirl2 {
+      top: 20px;
+      right: 20px;
+    }
+    .swirl3 {
+      bottom: 20px;
+      left: 20px;
+    }
+    .swirl4 {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    /* You can adjust swirl sizes, positions, or add more circles to each corner for a layered look. */
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Save <em>the</em> Date</h1>
-        <p>To celebrate the wedding of</p>
-        <h1>Alexandra & Chad</h1>
-        <h2>October 11, 2025</h2>
-        <p>DA Ranch<br>Cornville, AZ</p>
-        <p><em>Formal invitation to follow</em></p>
+
+  <div class="container">
+    <h1 class="title">Save the Date</h1>
+    <p class="subtitle">To celebrate the wedding of</p>
+
+    <h2 class="names">Alexandra Najera &amp; Chad Guzman</h2>
+
+    <p class="date">October 11, 2025</p>
+    <p class="location">DA Ranch, Cornville, AZ</p>
+
+    <p class="subtitle">Formal invitation to follow</p>
+
+    <!-- Travel & Accommodations -->
+    <div class="travel">
+      <h2>Travel &amp; Accommodations</h2>
+      <p>
+        <a href="https://thetavernhotel.com/" target="_blank" rel="noopener">Tavern Hotel</a><br />
+        904 North Main Street<br />
+        Cottonwood, AZ 86326
+      </p>
+      <p>
+        The wedding will take place in Cornville, but we’ve also included nearby towns that offer wonderful accommodations.
+      </p>
+      <p>
+        <strong>Cornville</strong> – Just minutes away from the venue, Cornville offers a cozy and intimate vibe perfect for a weekend getaway.
+      </p>
+      <p>
+        <strong>Cottonwood</strong> – A short drive from the wedding site, Cottonwood is home to charming hotels, inns, and cozy B&Bs.
+      </p>
+      <p>
+        <strong>Page Springs</strong> – A beautiful, peaceful area just a few miles away, ideal for those who want to enjoy nature’s beauty.
+      </p>
+      <p>
+        <strong>Sedona</strong> – For those looking for something a little more scenic, Sedona is only a short drive away, offering a range of luxurious resorts, boutique hotels, and stunning desert views.
+      </p>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="https://www.airbnb.com" target="_blank" rel="noopener">Airbnb</a> <a href="https://www.vrbo.com" target="_blank" rel="noopener">VRBO</a></li>
+      </ul>
+      <p>
+        We recommend booking your stay early to secure the best options. If you need help finding the right place, feel free to reach out!
+      </p>
     </div>
 
-    <div class="container travel-section">
-        <h3>Travel & Accommodation</h3>
-        <p>The bride and groom will be staying at:</p>
-        <div class="hotel">
-            <p><strong>Tavern Hotel</strong></p>
-            <p>904 North Main Street, Cottonwood, AZ 86326</p>
-        </div>
-        <p>Other nearby options include:</p>
-        <div class="links">
-            <a href="https://www.airbnb.com/s/Cornville--AZ" target="_blank">Airbnb - Cornville</a>
-            <a href="https://www.vrbo.com/search/keywords:Cornville--AZ" target="_blank">VRBO - Cornville</a>
-            <a href="https://www.booking.com" target="_blank">Hotels - Cottonwood</a>
-            <a href="https://www.airbnb.com/s/Page-Springs--AZ" target="_blank">Airbnb - Page Springs</a>
-            <a href="https://www.airbnb.com/s/Sedona--AZ" target="_blank">Airbnb - Sedona</a>
-        </div>
+    <div class="footer">
+      &copy; 2025 Alexandra Najera &amp; Chad Guzman. All rights reserved.
     </div>
+  </div>
 </body>
 </html>
