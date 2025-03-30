@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexandra Najera & Chad Guzman's Wedding</title>
   <!-- Google Fonts for an elegant, wedding-themed look -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +18,11 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    /* Global Paragraph & List Item Spacing */
+    p, li {
+      line-height: 1.8;
     }
 
     /* Body & Overall Page Setup */
@@ -98,7 +104,7 @@
     .travel p,
     .travel li {
       margin-bottom: 0.5em;
-      line-height: 1.6;
+      /* Increased line-height added globally */
     }
 
     .travel a {
@@ -149,7 +155,33 @@
       right: 20px;
     }
 
-    /* You can adjust swirl sizes, positions, or add more circles to each corner for a layered look. */
+    /* Media Query for Mobile Devices */
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2.5rem;
+      }
+      .names {
+        font-size: 2rem;
+      }
+      .date {
+        font-size: 1.2rem;
+      }
+      .location {
+        font-size: 1rem;
+      }
+      .travel h2 {
+        font-size: 1.8rem;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -173,6 +205,8 @@
         904 North Main Street<br />
         Cottonwood, AZ 86326
       </p>
+      
+
       <p>
         The wedding will take place in Cornville, but we’ve also included nearby towns that offer wonderful accommodations.
       </p>
@@ -188,12 +222,12 @@
       <p>
         <strong>Sedona</strong> – For those looking for something a little more scenic, Sedona is only a short drive away, offering a range of luxurious resorts, boutique hotels, and stunning desert views.
       </p>
+      <p>
+        We recommend booking your stay early to secure the best options. If you need help finding the right place, feel free to reach out!
+      </p>      
       <ul style="list-style: none; padding: 0;">
         <li><a href="https://www.airbnb.com" target="_blank" rel="noopener">Airbnb</a> <a href="https://www.vrbo.com" target="_blank" rel="noopener">VRBO</a></li>
       </ul>
-      <p>
-        We recommend booking your stay early to secure the best options. If you need help finding the right place, feel free to reach out!
-      </p>
     </div>
 
     <div class="footer">
